@@ -1,0 +1,58 @@
+.App {
+    text-align: center;
+    overflow-x: hidden;
+    height: 100vh;
+    /*overflow: scroll;*/
+}
+.App input {
+    height: 40px;
+    width: 100%;
+    max-width: 250px;
+    margin: 50px 10px;
+    border-radius: 5px;
+    border-color: #666766;
+}
+.nodes {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.node {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nodeLeft {
+    position: relative;
+    left: -40px;
+    top: 20px;
+}
+.nodeLeft:before {
+    content: "";
+    width: 34px;
+    /*height: 1px;*/
+    border: 1px dashed;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -14px;
+    left: 50%;
+}
+.nodeRight {
+    position: relative;
+    right: -40px;
+    margin-top: -60px;
+}
+.nodeRight:before {
+    content: "";
+    width: 34px;
+    /*height: 1px;*/
+    border: 1px dashed;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -14px;
+    right: 50%;
+}
